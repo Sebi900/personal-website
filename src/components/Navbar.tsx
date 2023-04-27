@@ -1,36 +1,40 @@
 import Link from "next/link";
-import anime from "animejs/lib/anime.es.js";
-import Script from "next/script";
+import "animate.css";
 
 export default function NavBar() {
   return (
     <div>
-      <div className="flex flex-col text-right">
+      <div className="flex flex-col text-right lg:flex-row lg:justify-between">
         <Link
           href="/webdevelopment"
-          className="border border-b-black p-6 bg-white"
+          className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
         >
           webdevelopment
         </Link>
         <Link
           href="/mediaeducation"
-          className="border border-b-black p-6 bg-white"
+          className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
         >
           media education
         </Link>
-        <Link href="/about" className="border border-b-black p-6 bg-white">
+        <Link
+          href="/about"
+          className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
+        >
           about
         </Link>
-        <Link href="/contact" className="border border-b-black p-6 bg-white">
+        <Link
+          href="/contact"
+          className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
+        >
           contact
         </Link>
         <Link
           href="/experiments"
-          className="border border-b-black p-6 bg-white"
+          className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
         >
           experiments
         </Link>
-        <Script src="anime.min.js"></Script>
       </div>
     </div>
   );

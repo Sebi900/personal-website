@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* body {
+    height: 50%;
+    width: 100%;
+    margin: 0rem;
+    overflow: hidden;
+  } */
+
+  #image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    user-select: none; /* -- Prevent image highlighting -- */
+  }
+
+  #image-track > .image {
+    width: 30vmin;
+    height: 40vmin;
+    object-fit: cover;
+    object-position: 100% center;
+  }
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
