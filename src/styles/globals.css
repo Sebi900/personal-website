@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./particle.css";
+
 @layer base {
   /* body {
     height: 50%;

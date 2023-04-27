@@ -1,4 +1,5 @@
 import Back from "@/components/backbutton";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -7,7 +8,7 @@ export default function About() {
         <Back label="About"></Back>
         <p>about</p>
       </div>
-      <p className="text-black bg-white p-6 dark:text-white dark:bg-black">
+      <p className="text-black bg-white border border-b-black p-6 dark:text-white dark:bg-black">
         I am a mediaeducator and web developer with a diploma in cultrual- and
         media education from HS Merseburg. I offer designing and coding of
         microsites, portfolio sites, complex websites and webshops. My
@@ -20,6 +21,20 @@ export default function About() {
         network of designers, programmers, writers and photographers, if
         required.
       </p>
+      <div className="flex flex-col mt-0 text-right lg:flex-row lg:justify-between">
+        <Link
+          href="/webdevelopment"
+          className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
+        >
+          webdevelopment
+        </Link>
+        <Link
+          href="/mediaeducation"
+          className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
+        >
+          media education
+        </Link>
+      </div>
     </div>
   );
 }

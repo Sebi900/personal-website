@@ -6,18 +6,6 @@ export default function NavBar() {
     <div>
       <div className="flex flex-col text-right lg:flex-row lg:justify-between">
         <Link
-          href="/webdevelopment"
-          className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
-        >
-          webdevelopment
-        </Link>
-        <Link
-          href="/mediaeducation"
-          className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
-        >
-          media education
-        </Link>
-        <Link
           href="/about"
           className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
         >
