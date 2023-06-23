@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch } from "@headlessui/react";
-import { useSizeStore } from "@/pages/stores/styleStore";
+import { useSizeStore } from "@/stores/styleStore";
 
 type ToggleView = {};
 

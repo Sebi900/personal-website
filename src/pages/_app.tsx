@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
-import { useSizeStore } from "./stores/styleStore";
+import { useSizeStore } from "../stores/styleStore";
 import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
