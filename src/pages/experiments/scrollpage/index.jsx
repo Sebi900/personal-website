@@ -59,7 +59,7 @@ export default function Scrollpage() {
         <Back label="Scrollpage"></Back>
         <p>Scrollpage</p>
       </div>
-      <div
+      {/* <div
         id="image-track"
         data-mouse-down-at="0"
         data-prev-percentage="0"
@@ -89,8 +89,8 @@ export default function Scrollpage() {
           className="image rounded-lg"
           src="https://images.unsplash.com/photo-1548021682-1720ed403a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
           draggable="false"
-        />
-      </div>
+        /> */}
+      {/* </div> */}
     </div>
   );
 }
