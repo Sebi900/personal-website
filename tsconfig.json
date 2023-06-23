@@ -22,7 +22,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/Scrollbar.jsx"
+    "src/components/Scrollbar.jsx",
+    "src/pages/experiments/scrollpage/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -11,9 +11,9 @@ export default function Experiments() {
       <div className="flex text-black bg-white p-6 dark:text-white dark:bg-black">
         <Link href="/experiments/settings">Settings</Link>
       </div>
-      <div className="flex text-black bg-white p-6 dark:text-white dark:bg-black">
+      {/* <div className="flex text-black bg-white p-6 dark:text-white dark:bg-black">
         <Link href="/experiments/scrollpage">Scrollbar</Link>
-      </div>
+      </div> */}
       <div className="flex text-black bg-white p-6 dark:text-white dark:bg-black">
         <Link href="/experiments/particle">Particle</Link>
       </div>

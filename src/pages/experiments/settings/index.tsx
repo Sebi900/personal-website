@@ -1,4 +1,5 @@
 import { ToggleDarkmode } from "@/components/DarkModeButton";
+import { ToggleView } from "@/components/SizeButton";
 import Back from "@/components/backbutton";
 
 export default function Settings() {
@@ -9,6 +10,7 @@ export default function Settings() {
         <p>settings</p>
       </div>
       <ToggleDarkmode />
+      <ToggleView />
     </div>
   );
 }

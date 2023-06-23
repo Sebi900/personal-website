@@ -1,17 +1,18 @@
-import Back from "@/components/backbutton";
+import Back, { BackAbout } from "@/components/backbutton";
+import { send } from "process";
 
 export default function Mediaeducation() {
   return (
     <div>
       <div className="flex text-black bg-white p-6 justify-between w-screen dark:text-white dark:bg-black">
-        <Back label="Mediaeducation"></Back>
+        <BackAbout></BackAbout>
         <p>mediaeducation</p>
       </div>
       <p className="text-black bg-white p-6 dark:text-white dark:bg-black">
         Media education is becoming increasingly important in today´s society.
         With the proliferation of media and technology, we are constantly
         bombarded with information, and it´s essential that we are equipped with
-        the skills to navigate this complex landscape.{" "}
+        the skills to navigate this complex landscape.
       </p>
       <p className="pt-2 text-black bg-white p-6 dark:text-white dark:bg-black">
         Media education can help us become critical consumers of media by
