@@ -9,7 +9,7 @@ export default function Webdevelopment() {
         <p>webdevelopment</p>
       </div>
       <div className="flex text-black bg-white p-6 justify-between dark:text-white dark:bg-black">
-        Welcome! My name is Sebastian and I recently completed a frontend
+        I recently completed a frontend
         development bootcamp where I gained knowledge and experience in HTML,
         CSS, JavaScript/TypeScript, Next.js, Docker, React framework, Git
         workflow, and more. I am excited to start my career as a frontend
