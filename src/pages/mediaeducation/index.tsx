@@ -9,7 +9,7 @@ export default function Mediaeducation() {
         <p>mediaeducation</p>
       </div>
       <p className="text-black bg-white p-6 dark:text-white dark:bg-black">
-        In today's society, media education is increasingly important. The constant influx of information due to the proliferation of media and technology necessitates that we possess the necessary skills to navigate this intricate landscape.
+        In todays society, media education is increasingly important. The constant influx of information due to the proliferation of media and technology necessitates that we possess the necessary skills to navigate this intricate landscape.
       </p>
       <p className="pt-2 text-black bg-white p-6 dark:text-white dark:bg-black">
        By teaching us how to analyze, evaluate, and interpret media messages, media education enables us to become critical consumers of media. Understanding the construction and impact of media allows us to become discerning viewers and listeners.
