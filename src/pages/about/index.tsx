@@ -9,8 +9,8 @@ export default function About() {
         <p>about</p>
       </div>
       <p className="text-black bg-white border border-b-black p-6 dark:text-white dark:bg-black">
-        I am a mediaeducator and web developer with a diploma in cultrual- and
-        media education from HS Merseburg. I offer designing and coding of
+        Welcome! My name is Sebastian and I am a mediaeducator and web developer with a diploma in cultrual- and media education from HS Merseburg.
+        I offer designing and coding of
         microsites, portfolio sites, complex websites and webshops. My
         specialities are CMS driven websites using state of the art technologies
         with userbility, expandability, performance and SEO in mind. I am

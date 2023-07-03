@@ -1,13 +1,4 @@
 import Link from "next/link";
-import "animate.css";
-import anime from "animejs";
-
-// var elements = document.querySelectorAll("div");
-
-// anime({
-//   targets: elements,
-//   translateX: 270,
-// });
 
 export default function NavBar() {
   return (
