@@ -10,7 +10,7 @@ export default function Threejs() {
         <p>Three.js</p>
       </div >
        <div id="canvas" style={{ height: "90vw", width: "90vw"}}>
-         <Canvas
+         <Canvas 
               camera={ {
                   fov: 45,
                   near: 0.1,
