@@ -17,6 +17,9 @@ export default function Experiments() {
       <div className="flex text-black bg-white p-6 dark:text-white dark:bg-black">
         <Link href="/experiments/particle">Particle</Link>
       </div>
+      <div className="flex text-black bg-white p-6 dark:text-white dark:bg-black">
+        <Link href="/experiments/threejs">three.js</Link>
+      </div>
     </>
   );
 }

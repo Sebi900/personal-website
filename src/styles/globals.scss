@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: rgba(32, 30, 33, 1);
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
 }
 
 .big {
@@ -25,7 +35,7 @@ html, body {
 
 body {
   background-color: rgba(32, 30, 33, 1);
-  overflow: hidden; // no scrollbars.. 
+  // overflow: hidden; // no scrollbars.. 
 }
 
 .wrap {
@@ -79,4 +89,8 @@ body {
        transform: rotateZ(-$z) rotateY($y) translateX( ($orb-size * 3) ) rotateZ($z); // translateX * 3
     }
   }
+}
+
+#canvas{
+  margin: 4rem;
 }
