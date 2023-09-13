@@ -16,8 +16,8 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [isFontSizeBig]);
   return (
-    <ThemeProvider attribute="class">
-      <Component {...pageProps} />
-    </ThemeProvider>
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
   );
 }

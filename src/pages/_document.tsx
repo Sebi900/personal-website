@@ -6,7 +6,6 @@ export default function Document() {
       <Head />
       <body className="h-screnn w-screen m-0 overflow-hidden">
         <Main />
-        <div id="root"></div>
         <NextScript />
       </body>
     </Html>

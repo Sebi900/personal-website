@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <div>
-      <div className="flex flex-col text-right lg:flex-row lg:justify-between">
+      <div className="flex flex-col text-right lg:flex-row lg:justify-between navbar">
         <Link
           href="/about"
           className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
@@ -20,7 +20,7 @@ export default function NavBar() {
           href="/experiments"
           className="border border-b-black p-6 bg-white lg:w-full lg:text-center dark:bg-black dark:text-white dark:border-b-white"
         >
-          experiments
+          watch
         </Link>
       </div>
     </div>

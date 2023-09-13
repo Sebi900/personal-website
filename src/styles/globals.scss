@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: wow;
+  src: url("./Obrazec-2.ttf");
+}
+
 *
 {
     margin: 0;
@@ -97,3 +102,181 @@ background-color: rgba(0, 0, 0, 0.875);
 border-radius: 100px;
 }
 
+// Dotring
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-links li{
+  padding: 1rem;
+}
+.nav-links, h1{
+  flex: 1;
+}
+
+img{
+  width: 50vh;
+}
+ .cursor{
+  width: 6rem;
+  height: 6rem;
+  // border: 0.5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background,transform ;
+  transform-origin: 100% 100%;
+  z-index: 0;
+  backdrop-filter: invert(20); 
+ }
+
+ .link-grow{
+  transform: scale(2); 
+  background: blue;
+ }
+
+ .hovered-link{
+  color: white;
+ }
+
+ .front-cover img{
+  position: relative;
+  z-index: -3; 
+ }
+
+ .nocursor{
+  cursor: none;
+ }
+
+ .meerfoto{
+  z-index: -1;
+  flex: end;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+ }
+
+ // Text Animation
+
+ .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 50%,
+    #32b0d3 60%,
+    #231557 100%
+  
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+      font-size: 1rem;
+      padding: -1rem;
+  margin-left: 8rem;
+  z-index: 4;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+
+.backbuttoncursor{
+  display: flex;
+}
+
+.backbuttoncursor > svg{
+  align-items: center;
+  justify-content: center;
+}
+
+// Main Page 
+
+.mainpagetypo{
+  margin-top: 23vh;
+  // margin-left: -10rem; // not sure yet
+  font-size: 10.5rem;
+  color: rgb(218, 220, 196);
+  // font-family: Georgia, 'Times New Roman', Times, sans-serif;
+  font-family: wow;
+}
+
+// Overlay
+
+.sebi{
+  width: 33.3333vw;
+  height: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0rem;
+  left: 0;
+  right: 0;
+  background-color: #ffffff00;
+  overflow: hidden;
+  width: 33.33vw;
+  height: vh;
+  transition: 3s ease;
+  backdrop-filter: blur(10px);
+  opacity: 2;
+}
+
+.container {
+  position: relative;
+  width: 33.33vw;
+  z-index: 3;
+}
+
+.container:hover .overlay {
+  width: 0%;
+  opacity: 0;
+}
+
+.text {
+  font-size: 10.5rem;
+  font-family: wow;
+  white-space: nowrap; 
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
