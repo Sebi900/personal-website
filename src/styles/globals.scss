@@ -7,6 +7,9 @@
   src: url("./Obrazec-2.ttf");
 }
 
+html { overflow-y: scroll; }
+body { position: absolute; }
+
 *
 {
     margin: 0;
@@ -234,10 +237,22 @@ img{
   font-family: wow;
 }
 
+@media (max-width: 1024px) {
+  .mainpagetypo{
+    margin-top: 0;
+    // margin-left: -10rem; // not sure yet
+    font-size: 5rem;
+    color: rgb(218, 220, 196);
+    // font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-family: wow;
+  }
+  
+}
+
 // Overlay
 
 .sebi{
-  width: 33.3333vw;
+  width: 100vw;
   height: 100%;
   display: block;
 }
@@ -255,6 +270,24 @@ img{
   transition: 3s ease;
   backdrop-filter: blur(10px);
   opacity: 2;
+}
+
+@media (max-width: 1024px) {
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    background-color: #ffffff00;
+    overflow: hidden;
+    width: 29vw;
+    height: vh;
+    transition: 3s ease;
+    backdrop-filter: blur(10px);
+    opacity: 2;
+  }
+  
 }
 
 .container {
