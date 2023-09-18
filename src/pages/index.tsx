@@ -1,6 +1,7 @@
 import NavBar from "@/components/Navbar";
 import Image from "next/image";
 import foto from '@/public/profilpic.jpg'
+import Cursor from '@/components/Cursor';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         </div>
         <p className="mainpagetypo">evelopment</p>
       </div>
+      <Cursor/>
     </main>
   );
 }

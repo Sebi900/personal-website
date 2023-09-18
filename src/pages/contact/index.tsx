@@ -17,5 +17,6 @@ export default function Contact() {
       </div>
       <div className="flex"
       ><ContactForm/></div>
+      
     </div>
 )}
