@@ -2,7 +2,6 @@ import * as THREE from 'three'
 import { TrackballControls} from 'three/examples/jsm/controls/TrackballControls'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import GUI from "lil-gui"
-import { gsap } from 'gsap'
 
 THREE.ColorManagement.enabled = false
 
