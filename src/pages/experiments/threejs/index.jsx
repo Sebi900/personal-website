@@ -1,7 +1,7 @@
 import Back from "@/components/backbutton";
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from '@react-three/drei'
-
+ 
 export default function Threejs() {
   return (
     <div>
@@ -9,14 +9,14 @@ export default function Threejs() {
         <Back label="threejs"></Back>
         <p>Three.js</p>
       </div >
-       <div id="canvas" style={{ height: "40vw", width: "40vw"}}>
-         <Canvas 
-              camera={ {
-                  fov: 45,
-                  near: 0.1,
-                  far: 200,
-                  position: [ - 4, 3, 6 ]
-              } }
+       <div id="canvas" style={{ height: "50vw", width: "100vw"}}>
+         <Canvas orthographic camera={{ zoom: 100, position: [0, 0, 5]}}
+              // camera={ {
+              //     fov: 45,
+              //     near: 0.1,
+              //     far: 200,
+              //     position: [ 0, 0, 6 ]
+              // } }
           >
    
           <OrbitControls makeDefault />
@@ -24,15 +24,19 @@ export default function Threejs() {
           <directionalLight position={ [ 1, 2, 3 ] } intensity={ 1.5 } />
           <ambientLight intensity={ 0.5 } />
 
-          <mesh scale={ 2 }>
-            <sphereGeometry />
+          <mesh scale={ 5 } position={ [ 0, 0, 1 ] }>
+            <planeBufferGeometry />
             <meshStandardMaterial color="blue" wireframe />
           </mesh>  
-          <mesh scale={ 1 }>
-            <sphereGeometry />
-            <meshStandardMaterial color="red" />
-          </mesh>  
-  
+          <mesh scale={ 5 } position={ [ 0, 0, 2 ] }>
+            <planeBufferGeometry />
+            <meshStandardMaterial color="green" wireframe />
+          </mesh> 
+          <mesh scale={ 5 } position={ [ 0, 0, 3 ] }>
+            <planeBufferGeometry />
+            <meshStandardMaterial color="red" wireframe />
+          </mesh> 
+
         </Canvas>
         </div> 
     </div>

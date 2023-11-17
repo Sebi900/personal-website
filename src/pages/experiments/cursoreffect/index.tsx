@@ -3,7 +3,6 @@ import { useContext } from 'react';
 import Back from '@/components/backbutton';
 import Cursor from '@/components/Cursor';
 import Image from 'next/image';
-import pic from '@/public/Meer.jpeg'
 
 const CursorPage = () => {
   return (
@@ -16,7 +15,9 @@ const CursorPage = () => {
         <div className='flex'>
           <Image
             className='meerfoto'
-              src={pic}
+              src={"/Meer.jpeg"}
+              width={2800}
+              height={2000}
               alt='foto'
               priority>
            </Image>

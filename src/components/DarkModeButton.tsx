@@ -24,7 +24,7 @@ export function ToggleDarkmode(props: ToggleView) {
 
           <span
             className={`${
-              theme === "light" ? " text-red-400" : "text-green-400"
+              theme === "light" ? "text-green-400" : "text-red-400"
             }`}
           >
             Darkmode
