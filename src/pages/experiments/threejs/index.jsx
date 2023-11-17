@@ -11,12 +11,6 @@ export default function Threejs() {
       </div >
        <div id="canvas" style={{ height: "50vw", width: "100vw"}}>
          <Canvas orthographic camera={{ zoom: 100, position: [0, 0, 5]}}
-              // camera={ {
-              //     fov: 45,
-              //     near: 0.1,
-              //     far: 200,
-              //     position: [ 0, 0, 6 ]
-              // } }
           >
    
           <OrbitControls makeDefault />
